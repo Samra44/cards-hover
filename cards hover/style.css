@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(158, 137, 179);
+}
+.box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 15px;
+    border: 2px solid #fff;
+}
+img{
+    width: 300px;
+    height: 300px;
+   
+}
+.hover-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all linear 0.1s;
+}
+ :hover img{
+    opacity: 0;
+}
+:hover img{
+    opacity: 1;
+}
